@@ -15,8 +15,8 @@ foreach ($mailbox in $mailboxes) {
     $primarySmtpAddress = $mailbox.PrimarySmtpAddress
     try {
         Set-Mailbox -Identity $primarySmtpAddress -Type Shared
-        Write-Host "Converted user mailbox '$primarySmtpAddress' to a shared mailbox."
+        Write-Host "Converted the user '$primarySmtpAddress' to a shared mailbox."
     } catch {
-        Write-Host "Failed to convert user mailbox '$primarySmtpAddress' to a shared mailbox. $_" -ForegroundColor Red
+        Write-Host "Failed to convert user '$primarySmtpAddress' to a shared mailbox. $_" -ForegroundColor Red
     }
 }
