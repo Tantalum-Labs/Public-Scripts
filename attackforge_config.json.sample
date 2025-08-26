@@ -1,0 +1,6 @@
+{
+  "make_api_key": "API key for Make.com helper (published seperately)",
+  "webhook_get_assets": "Get Asset Webhook",
+  "webhook_create_assets": "Create Asset Webhook",
+  "webhook_create_vulns": "Create Findings Webhook"
+}
